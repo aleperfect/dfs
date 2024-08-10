@@ -9,33 +9,9 @@ const handler = async (m, {conn, usedPrefix}) => {
 
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `${tradutor.texto1[0]}
+  const text = `*𝙼𝙸 𝙲𝚁𝙴𝙰𝙳𝙾𝚁  𝙴𝚂 𝑻𝒖𝒎𝒃𝒂𝒅𝒐𝑽𝒆𝒏𝒕𝒂𝒔*
 
-  ${tradutor.texto1[1]}
-
-  ${tradutor.texto1[2]}
-
-  ${tradutor.texto1[3]}
-
-  ${tradutor.texto1[4]}
-
-  ${tradutor.texto1[5]}
-
-  ${tradutor.texto1[6]}
-
-  ${tradutor.texto1[7]}
-
-  ${tradutor.texto1[8]}
-
-  ${tradutor.texto1[9]}
-
-  ${tradutor.texto1[10]}
-
-  ${tradutor.texto1[11]}
-
-  ${tradutor.texto1[12]}
-  
-  ${tradutor.texto1[13]}`.trim();
+*Para mas informacion acerca del bot contactame*`.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
     'mimetype': `application/${document}`,
